@@ -102,3 +102,16 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# Output
+*.txt
+*.html
+*.zip
+
+# IDE 
+.idea/
+Scripts/
+pyvenv.cfg
+pip-selfcheck.json
+
