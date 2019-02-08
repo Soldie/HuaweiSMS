@@ -17,7 +17,7 @@ The modem firmware provides an API set for working with it.
 * Set [here](https://github.com/kovinevmv/HuaweiSMS/blob/master/source/main.py#L14) your Wi-Fi ESSID with Huawei e3372h
 * Create executable file by pyinstaller:
 ```
-pyinstaller --hidden-import=xmltodict main.py
+pyinstaller --hidden-import=xmltodict --noconosle -F main.py
 ```
 * Add executable file to startup -> [Instruction](https://www.howtogeek.com/228467/how-to-make-a-program-run-at-startup-on-any-computer/)
 
