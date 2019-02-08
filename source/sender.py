@@ -27,9 +27,8 @@ class Sender:
                 mailServer.login(self.source_email, self.source_pass)
                 mailServer.sendmail(self.source_email, self.dest_email, msg.as_string())
                 mailServer.close()
-                print('Sended')
             except:
-                print('Cant send msg')
+                pass
 
     def data_to_text(self, data):
         text = '<div data-marker="wrapper" style="" class="stylingblock-content-wrapper"></div><!DOCTYPE html' \
