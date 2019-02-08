@@ -9,9 +9,9 @@ class Main:
         self.start()
 
     def is_WiFi(self):
-        interface = subprocess.check_output('netsh wlan show interface').decode('cp866').strip()
-		# Check is PC connected to Wi-Fi with Huawei e3372h
         return 'MY Wi-Fi name' in interface
+        interface = subprocess.check_output('netsh wlan show interface', stdin=subprocess.PIPE,
+                                            stderr=subprocess.PIPE).decode('cp866').strip()
 
     def compare(self, data1, data2):
         for msg in data1:
