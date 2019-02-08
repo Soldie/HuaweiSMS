@@ -13,8 +13,8 @@ The modem firmware provides an API set for working with it.
 
 ## Setup
 
-* Set [here](https://github.com/kovinevmv/HuaweiSMS/blob/master/sender.py#L8) your gmail, password, and destination mail.
-* Set [here](https://github.com/kovinevmv/HuaweiSMS/blob/master/main.py#L14) your Wi-Fi ESSID with Huawei e3372h
+* Set [here](https://github.com/kovinevmv/HuaweiSMS/blob/master/source/sender.py#L8) your gmail, password, and destination mail.
+* Set [here](https://github.com/kovinevmv/HuaweiSMS/blob/master/source/main.py#L14) your Wi-Fi ESSID with Huawei e3372h
 * Create executable file by pyinstaller:
 ```
 pyinstaller --hidden-import=xmltodict main.py
