@@ -9,9 +9,9 @@ class Main:
         self.start()
 
     def is_WiFi(self):
-        return 'MY Wi-Fi name' in interface
         interface = subprocess.check_output('netsh wlan show interface', stdin=subprocess.PIPE,
                                             stderr=subprocess.PIPE).decode('cp866').strip()
+        return 'MY Wi-Fi name' in interface
 
     def compare(self, data1, data2):
         for msg in data1:
